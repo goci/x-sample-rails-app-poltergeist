@@ -18,6 +18,11 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :development, :test do
+  gem 'poltergeist'
+end
+
 # gem 'therubyrhino'
 
 # To use ActiveModel has_secure_password

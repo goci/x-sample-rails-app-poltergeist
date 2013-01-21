@@ -21,7 +21,6 @@ class FooTest < ActionController::IntegrationTest
 
   test "foo" do
     visit '/posts/new'
-    puts page.html
     assert page.has_css?('textarea.content')
   end
 end

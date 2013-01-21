@@ -15,8 +15,6 @@ end
 class FooTest < ActionController::IntegrationTest
 
   setup do
-    Capybara.run_server = false
-    Capybara.app_host = 'http://localhost:3001'
     Capybara.javascript_driver = :poltergeist
     Capybara.current_driver =    :poltergeist
   end
